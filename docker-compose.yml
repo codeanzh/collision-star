@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  api:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: collision_star
+    container_name: collision_star
+    env_file:
+      - ./.env
+    environment:
+      - BUILD_ENV=dev
+      - API_PREFIX=/api
+      - PORT=8000
+    ports:
+      - 8000:8000
+    volumes:
+      - ./:/app
