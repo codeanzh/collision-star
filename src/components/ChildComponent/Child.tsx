@@ -7,7 +7,10 @@ const Child: React.FC<ChildProps> = () => {
 
   return (
     <div className={styles.ChildContainer}>
-
+      <div className={styles.child}></div>
+      <div className={styles.child}></div>
+      <div className={styles.child}></div>
+      <div className={styles.child}></div>
     </div>
   );
 };
